@@ -201,7 +201,7 @@ graph TD
     J --> L{当前字符}
     L -->|数字| M[frac 累加 count加1]
     M --> L
-    L -->|其他| N[frac 补齐到6位 DOS为3位]
+    L -->|其他| N["frac 补齐到6位 DOS为3位"]
     N --> O[result 等于 int乘SCALE 加 frac]
     O --> P[result 乘符号]
     K --> P

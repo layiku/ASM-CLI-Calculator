@@ -196,7 +196,7 @@ graph TD
     J --> L{Current Char}
     L -->|Digit| M[frac = frac*10 + digit, count++]
     M --> L
-    L -->|Other| N[Pad frac to 6 digits (3 for DOS)]
+    L -->|Other| N["Pad frac to 6 digits (3 for DOS)"]
     N --> O[result = int*SCALE + frac]
     O --> P[result *= sign]
     K --> P
